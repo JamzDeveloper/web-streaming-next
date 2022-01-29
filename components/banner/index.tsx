@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 
 import PlayCircle from "../../assets/components-svg/play-circle";
 
