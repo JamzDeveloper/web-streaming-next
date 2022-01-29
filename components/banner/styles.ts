@@ -54,7 +54,6 @@ export const ContentBanner = styled.div`
 `;
 export const DivAction = styled.div`
   display: flex;
-
   align-items: center;
   width: 80%;
   height: 50px;
@@ -70,14 +69,16 @@ export const Button = styled.button`
 `;
 
 export const Button2 = styled.button`
-  margin-left: 10px;
+  margin-left: 30px;
   background-color: rgba(1, 1, 1, 0.5);
   border: none;
   cursor: pointer;
   font-size: 20px;
-  padding: 7px;
+  padding: 10px;
   border-radius: 15px;
   a {
     color: #ffffff;
+    text-decoration: none;
+ 
   }
 `;

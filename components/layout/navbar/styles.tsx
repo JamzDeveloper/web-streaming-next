@@ -113,6 +113,11 @@ div{
       text-decoration: none;
       list-style:none;
   }
+  a{
+    text-decoration: none;
+    color: white;
+
+  }
   a:hover{
         color: red;
   }

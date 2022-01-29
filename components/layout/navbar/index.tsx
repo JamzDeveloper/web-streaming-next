@@ -21,13 +21,16 @@ import useWindowSize from "../../../hooks/useWindowSize";
 
 const Navbar: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const {width} = useWindowSize();
+  const { width } = useWindowSize();
 
   return (
     <Nav>
       <NavItem>
         <Button aria-label="Menu" onClick={() => setIsOpen(!isOpen)}>
-          <MenuIcon width={(width>700)? 35:25} height={(width>700)? 35:25} />
+          <MenuIcon
+            width={width > 700 ? 35 : 25}
+            height={width > 700 ? 35 : 25}
+          />
         </Button>
         <UlMenu className={isOpen ? style.isopen : style.isnotopen}>
           <MenuContainer>
@@ -36,31 +39,31 @@ const Navbar: NextPage = () => {
               <button onClick={() => setIsOpen(!isOpen)}> X</button>
             </div>
             <li>
-              <a>Action</a>
+              <a href="#">Action</a>
             </li>
             <li>
-              <a>Comedy</a>
+              <a href="#">Comedy</a>
             </li>
             <li>
-              <a>Drama</a>{" "}
+              <a href="#">Drama</a>{" "}
             </li>
             <li>
-              <a>Fantasy</a>{" "}
+              <a href="#">Fantasy</a>{" "}
             </li>
             <li>
-              <a>Horror</a>{" "}
+              <a href="#">Horror</a>{" "}
             </li>
             <li>
-              <a>Mystery</a>{" "}
+              <a href="#">Mystery</a>{" "}
             </li>
             <li>
-              <a>Romance</a>{" "}
+              <a href="#">Romance</a>{" "}
             </li>
             <li>
-              <a>Thriller</a>{" "}
+              <a href="#">Thriller</a>{" "}
             </li>
             <li>
-              <a>Western</a>{" "}
+              <a href="#">Western</a>{" "}
             </li>
             <li>
               <a
@@ -74,14 +77,21 @@ const Navbar: NextPage = () => {
           </MenuContainer>
         </UlMenu>
         <Button aria-label="Busqueda">
-          <SearchIcon width={(width>700)? 35:25} height={(width>700)? 35:25} />
+          <SearchIcon
+            width={width > 700 ? 35 : 25}
+            height={width > 700 ? 35 : 25}
+          />
         </Button>
       </NavItem>
       <NavItem>
         {
           <Link href="/">
             <A>
-              <HboMaxIcon width={(width>700)? 150:135} height={(width>700)? 40:30}  color="white" />
+              <HboMaxIcon
+                width={width > 700 ? 150 : 135}
+                height={width > 700 ? 40 : 30}
+                color="white"
+              />
             </A>
           </Link>
         }

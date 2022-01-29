@@ -24,7 +24,7 @@ const banner = () => {
           </Button>
           <Button2>
             {" "}
-            <a>Más informacion</a>
+            <a href="#">Más informacion</a>
           </Button2>
         </DivAction>
       </ContentBanner>
