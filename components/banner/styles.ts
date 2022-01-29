@@ -47,8 +47,10 @@ export const ContentBanner = styled.div`
 
   height: 30%;
   font-size: 1.25rem;
-  /* background-color: blue;
-*/
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
 `;
 export const DivAction = styled.div`
   display: flex;

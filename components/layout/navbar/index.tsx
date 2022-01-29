@@ -17,15 +17,17 @@ import Link from "next/link";
 import HboMaxIcon from "../../../assets/components-svg/hbo.max";
 import SearchIcon from "../../../assets/components-svg/search";
 import MenuIcon from "../../../assets/components-svg/menu";
+import useWindowSize from "../../../hooks/useWindowSize";
 
 const Navbar: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const {width} = useWindowSize();
 
   return (
     <Nav>
       <NavItem>
         <Button aria-label="Menu" onClick={() => setIsOpen(!isOpen)}>
-          <MenuIcon width={35} height={35} />
+          <MenuIcon width={(width>700)? 35:25} height={(width>700)? 35:25} />
         </Button>
         <UlMenu className={isOpen ? style.isopen : style.isnotopen}>
           <MenuContainer>
@@ -72,14 +74,14 @@ const Navbar: NextPage = () => {
           </MenuContainer>
         </UlMenu>
         <Button aria-label="Busqueda">
-          <SearchIcon width={35} height={35} />
+          <SearchIcon width={(width>700)? 35:25} height={(width>700)? 35:25} />
         </Button>
       </NavItem>
       <NavItem>
         {
           <Link href="/">
             <A>
-              <HboMaxIcon width="150" height="40" color="white" />
+              <HboMaxIcon width={(width>700)? 150:135} height={(width>700)? 40:30}  color="white" />
             </A>
           </Link>
         }

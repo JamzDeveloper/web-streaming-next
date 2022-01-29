@@ -24,7 +24,7 @@ const Corousel = ({ movies }: any) => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
   };
   
@@ -35,7 +35,7 @@ const Corousel = ({ movies }: any) => {
           <Card
             key={movie.id}
             src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
-            name={movie.original_title}
+            name={(movie.original_title.length>24)?movie.original_title.substring(0,20)+"...":movie.original_title}
           />
         ))}
       </Slider>

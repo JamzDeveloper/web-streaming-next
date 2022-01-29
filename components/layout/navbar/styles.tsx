@@ -30,6 +30,10 @@ export const NavItemAvatar = styled.div`
   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  @media (max-width: 700px) {
+    width: 100%;
+    margin-right: 15px;
+  }
 `;
 
 export const A = styled.a`
