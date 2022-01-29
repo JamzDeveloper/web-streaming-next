@@ -1,0 +1,9 @@
+.isopen {
+  transform: translateX(93px);
+  
+  transition: all 0.3s ease-out;
+}
+.isnotopen {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-160px);
+}
