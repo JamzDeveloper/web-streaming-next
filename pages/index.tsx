@@ -3,7 +3,7 @@ import { InferGetStaticPropsType } from "next";
 import Banner from "../components/banner";
 import Carousel from "../components/carousel";
 import { Response } from "../types/Movies";
-//import { DivContainer, DivContainerPopular, DivPopular } from "./styles";
+
 const DivContainer = styled.div``;
 
 const DivContainerPopular = styled.div`
