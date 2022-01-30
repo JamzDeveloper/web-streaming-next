@@ -17,6 +17,7 @@ export const NavItem = styled.div`
   width: 150px;
   margin-left: 7px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 `;
 export const NavItemAvatar = styled.div`
   position: relative;
@@ -31,7 +32,7 @@ export const NavItemAvatar = styled.div`
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
   @media (max-width: 700px) {
-    width: 100%;
+    width: 120px;
     margin-right: 15px;
   }
 `;
@@ -77,7 +78,7 @@ export const UlMenu = styled.ul`
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: -15px;
+  top: -20px;
   right: 0;
   background-color: rgba(1, 1, 1, 0.96);
   color: white;
